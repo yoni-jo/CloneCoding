@@ -107,8 +107,9 @@ header nav .lnb .lnb__list {
     flex-direction: column;
     margin-right: 10%;
     position: relative;
-    top:200px;
+    top:20px;
     opacity: 0;
+    display:none;
     z-index: -1;
 }
 
