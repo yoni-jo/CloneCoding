@@ -1,0 +1,13 @@
+:root {
+    /* font */
+    --font-nanum: 'Nanum Gothic '
+    /* color */
+}
+
+
+
+
+html,
+body {
+    font-family: 'Jost', sans-serif;
+}
