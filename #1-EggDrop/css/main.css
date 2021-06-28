@@ -73,3 +73,19 @@
     }
 
 }
+
+
+/* MENU */
+.menu {
+    width: 100%;
+    height: 1300px;
+    text-align: center;
+}
+
+.menu .inner {}
+.menu h2 {}
+.menu .pageNav {}
+
+.menu .pageNav li {}
+
+.menu .pageNav li a.underline {}

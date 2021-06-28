@@ -50,28 +50,6 @@ header nav .gnb li {
 header nav .gnb li a {
     font-size: 1.3em;
     font-weight: 600;
-    position: relative;
-    transition: .3s ease-in-out;
-}
-
-header nav .gnb li:not(li:last-child):hover>a {
-    color: red;
-}
-
-header nav .gnb li:not(li:last-child)>a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -30px;
-    width: 100%;
-    height: 0px;
-    background-color: red;
-    transition: .3s ease-in-out;
-}
-
-header nav .gnb li:not(li:last-child):hover>a::after {
-    height: 2px;
-    bottom: -10px;
 }
 
 header nav .gnb li:last-child a {

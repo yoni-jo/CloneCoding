@@ -35,7 +35,7 @@ gnb.forEach((gnb) => {
         })
     })
 })
-
+//상단 배너슬라이드 
 new Swiper('.slide-banner .swiper-container', {
     direction: 'horizontal',
     autoplay: {
