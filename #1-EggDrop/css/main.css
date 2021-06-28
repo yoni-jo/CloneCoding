@@ -1,0 +1,75 @@
+/* SLIDE BANNER */
+.slide-banner {
+    width: 100%;
+    height: 1000px;
+    padding-top: 100px;
+    position: relative;
+}
+
+.slide-banner .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.slide-banner .swiper-wrapper .swiper-slide figure {
+    width: 100%;
+    height: 100%;
+}
+
+.slide-banner .swiper-wrapper .swiper-slide figure .banner-item {
+    width: 100%;
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+.slide-banner .swiper-pagination {
+    text-align: left;
+    padding-left: 5em;
+}
+
+.slide-banner .swiper-pagination .swiper-pagination-bullet {
+    background-color: #000;
+    width: 0.9em;
+    height: 0.9em;
+    margin-right: 1em !important;
+}
+
+
+.slide-banner .slideOn {
+    cursor: pointer;
+    position: absolute;
+    left: calc(50% - 60px);
+    min-width: 120px;
+    font-size: 1.5em;
+    font-weight: bold;
+    bottom: .5em;
+    z-index: 999;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.slide-banner .slideOn:hover {
+    animation: jumping .6s ease-in-out infinite forwards;
+}
+
+.slide-banner .slideOn>div {
+    font-size: 1.5em;
+}
+
+@keyframes jumping {
+    0% {
+        bottom: 0em
+    }
+
+    50% {
+        bottom: .5em;
+    }
+
+    100% {
+        bottom: 0em
+    }
+
+}

@@ -11,13 +11,13 @@ gnb.forEach((gnb) => {
             gsap.to(lnb, 0.5, {
                 opacity: 1,
                 display: 'flex',
-                top: 110
+                top: 100
             })
             gsap.to(lnb__list, .6, {
                 delay: .5,
                 opacity: 1,
                 top: 0,
-                display:'flex'
+                display: 'flex'
             })
         })
 
@@ -31,7 +31,21 @@ gnb.forEach((gnb) => {
         })
         gsap.to(lnb__list, 0.1, {
             opacity: 0,
-            display:'none'
+            display: 'none'
         })
     })
 })
+
+new Swiper('.slide-banner .swiper-container', {
+    direction: 'horizontal',
+    autoplay: {
+        delay:3000
+    },
+    slidesPerView: 1,
+    loop: true,
+    pagination: {
+        el: '.slide-banner .swiper-pagination', //페이지 번호 요소 선택자
+        clickable: true //사용자의 페이지 번호 요쇼 제어 
+
+    }
+});
