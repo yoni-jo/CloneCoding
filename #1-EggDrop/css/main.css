@@ -156,8 +156,10 @@
 /* NEW EGGDROP */
 
 .newEggDrop {
+    overflow: hidden;
     margin-top: 100px;
     background-color: #f4ebc1;
+    position: relative;
 }
 
 .newEggDrop h2 {
@@ -191,4 +193,5 @@
     width: 100%;
 }
 
-.newEggDrop .con__right {}
+.newEggDrop .con__right {z-index: 10;}
+.newEggDrop .con__right img{}

@@ -44,7 +44,7 @@ strong {
     font-weight: 900;
 }
 
-p{
+p {
     font-weight: (--font-nanum);
     font-size: 1.2em;
     font-weight: 600;
@@ -104,3 +104,20 @@ a.btn:hover {
     padding-top: 4px;
 }
 
+.rolling {
+    z-index:8;
+    position: absolute;
+    top: 100px;
+    right: calc(448px/-2);
+    animation: rolling 8s infinite linear;
+
+}
+
+@keyframes rolling {
+    0% {
+        transform: rotate(0deg)
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}
