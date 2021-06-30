@@ -202,13 +202,15 @@
     margin-top: 0;
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 }
 
 .store h2 {}
 
-.store>p {line-height: 2;}
+.store>p {
+    line-height: 2;
+}
 
 .store .container {
     margin-top: 50px;
@@ -285,4 +287,57 @@
 
 .store .store__etc .app .app__list li:last-child {
     margin-left: 10px;
+}
+
+
+/* EGG MAKES BETTER  */
+.eggMakesBetter {
+    position: relative;
+}
+
+.eggMakesBetter .title {
+    position: absolute;
+    top: 20px;
+    bottom: 0;
+    left: calc(50% - (1000px/2))
+}
+
+.eggMakesBetter .eggMakesBetter__wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items:center
+}
+
+.eggMakesBetter .eggMakesBetter__wrap figure {
+    width:70%;
+    height: 100%;
+    z-index: -1;
+    background-color:red;
+}
+.eggMakesBetter .eggMakesBetter__wrap figure  img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.eggMakesBetter .eggMakesBetter__content {
+    width: 30%;
+    padding: 0 50px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.eggMakesBetter .eggMakesBetter__content>*{
+    line-height:2;
+    letter-spacing: -1.5px;
+    white-space: wrap;
+} 
+.eggMakesBetter .eggMakesBetter__content h3{
+
+}
+.eggMakesBetter .eggMakesBetter__content p{
+    font-weight:normal;
+    margin-bottom: 2em;
+
+    
 }
