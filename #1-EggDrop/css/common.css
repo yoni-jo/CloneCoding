@@ -16,8 +16,10 @@ body {
 section {
     padding-top: 100px;
     width: 100%;
+    height: 100%;
     text-align: center;
 }
+
 .inner {
     max-width: 1300px;
     margin: 0 auto;
@@ -34,6 +36,19 @@ img {
 
 h2 {
     font-size: 3.5em;
+    font-weight: 600;
+}
+
+strong {
+    font-size: 1em;
+    font-weight: 900;
+}
+
+p{
+    font-weight: (--font-nanum);
+    font-size: 1.2em;
+    font-weight: 600;
+    white-space: pre-wrap;
 }
 
 /* 빨간색 밑줄 */
@@ -62,3 +77,30 @@ li:hover>a.underline::after {
     height: 2px;
     bottom: -10px;
 }
+
+a.btn {
+    width: 300px;
+    box-sizing: border-box;
+    padding: 3px;
+    color: #000;
+    border: 2px solid;
+    border-radius: 50px;
+    font-size: 1.3em;
+    font-weight: 900;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: color .3s;
+}
+
+a.btn:hover {
+    background-color: red;
+    color: #fff;
+    border: 2px solid red;
+}
+
+.material-icons {
+    font-size: 2.5em;
+    padding-top: 4px;
+}
+

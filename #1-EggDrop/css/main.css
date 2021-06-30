@@ -75,8 +75,7 @@
 
 
 /* MENU */
-.menu {
-}
+.menu {}
 
 .menu h2 {
     margin-bottom: 100px;
@@ -100,7 +99,7 @@
 
 .menu__list .swiper-container a {
     display: block;
-    height: 590px;
+    height: 500px;
 }
 
 .menu__list .swiper-container .swiper-slide {
@@ -109,21 +108,22 @@
 
 .menu__list .swiper-container a .list {
     position: relative;
+    top: 0;
     bottom: 0;
     transition: .3s;
     background-color: yellow;
     height: 100%;
-    
     overflow: hidden;
+    transition: top .3s;
 }
 
 
-.menu__list .swiper-container a .list:hover {
-    bottom: 100px
+.menu__list .swiper-container a:hover .list {
+    top: -100px;
 }
 
-.menu__list .swiper-container a .list:hover .list__img {
-    bottom: -50px;
+.menu__list .swiper-container a:hover .list .list__img {
+    bottom: -80px;
 }
 
 .menu__list .swiper-container .list>span {
@@ -134,11 +134,13 @@
 .menu__list .swiper-container .list>span>img {
     width: 100%;
 }
+
 .menu__list .swiper-container .list figcaption {
     position: absolute;
-    top:10px;
-    left:10px
+    top: 10px;
+    left: 10px
 }
+
 .menu__list .swiper-container .list>span.list__title {
     box-sizing: border-box;
     padding-top: 50px;
@@ -149,3 +151,44 @@
     bottom: -200px;
     transition: .3s;
 }
+
+
+/* NEW EGGDROP */
+
+.newEggDrop {
+    margin-top: 100px;
+    background-color: #f4ebc1;
+}
+
+.newEggDrop h2 {
+    margin-bottom: 100px;
+}
+
+.newEggDrop .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+
+}
+
+.newEggDrop .con__left {
+    max-width: 50%;
+    height: 500px;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 100px;
+}
+
+.newEggDrop .con__left .title {}
+
+.newEggDrop .con__left p {
+    letter-spacing: -.5px;
+}
+
+.newEggDrop .con__left .btn__wrap {
+    width: 100%;
+}
+
+.newEggDrop .con__right {}
