@@ -49,3 +49,15 @@ new Swiper('.slide-banner .swiper-container', {
 
     }
 });
+
+//메뉴 슬라이드 
+const menu=new Swiper('.menu .swiper-container', {
+    direction: 'horizontal',
+    autoplay: {
+        delay:3000
+    },
+    slidesPerView:4.5,
+    spaceBetween:10,
+    loop: true,
+    centeredSlides:true
+});

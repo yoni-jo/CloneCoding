@@ -11,9 +11,8 @@
     height: 100%;
 }
 
-.slide-banner .swiper-wrapper .swiper-slide figure {
+.slide-banner .swiper-wrapper .swiper-slide a figure {
     width: 100%;
-    height: 100%;
 }
 
 .slide-banner .swiper-wrapper .swiper-slide figure .banner-item {
@@ -78,14 +77,79 @@
 /* MENU */
 .menu {
     width: 100%;
-    height: 1300px;
+    padding-top: 100px;
     text-align: center;
 }
 
-.menu .inner {}
-.menu h2 {}
-.menu .pageNav {}
 
-.menu .pageNav li {}
+.menu h2 {
+    margin-bottom: 100px;
+}
 
-.menu .pageNav li a.underline {}
+.menu .menu__pageNav {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu .menu__pageNav li a.underline {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.menu__list {
+    margin-top: 50px;
+}
+
+.menu__list .swiper-container a {
+    display: block;
+    height: 590px;
+}
+
+.menu__list .swiper-container .swiper-slide {
+    padding-top: 100px;
+}
+
+.menu__list .swiper-container a .list {
+    position: relative;
+    bottom: 0;
+    transition: .3s;
+    background-color: yellow;
+    height: 100%;
+    
+    overflow: hidden;
+}
+
+
+.menu__list .swiper-container a .list:hover {
+    bottom: 100px
+}
+
+.menu__list .swiper-container a .list:hover .list__img {
+    bottom: -50px;
+}
+
+.menu__list .swiper-container .list>span {
+    display: block;
+    width: 100%;
+}
+
+.menu__list .swiper-container .list>span>img {
+    width: 100%;
+}
+.menu__list .swiper-container .list figcaption {
+    position: absolute;
+    top:10px;
+    left:10px
+}
+.menu__list .swiper-container .list>span.list__title {
+    box-sizing: border-box;
+    padding-top: 50px;
+}
+
+.menu__list .swiper-container .list .list__img {
+    position: absolute;
+    bottom: -200px;
+    transition: .3s;
+}
