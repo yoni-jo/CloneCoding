@@ -13,6 +13,11 @@ body {
 }
 
 
+section {
+    padding-top: 100px;
+    width: 100%;
+    text-align: center;
+}
 .inner {
     max-width: 1300px;
     margin: 0 auto;
@@ -56,10 +61,4 @@ li:hover>a.underline {
 li:hover>a.underline::after {
     height: 2px;
     bottom: -10px;
-}
-
-section {
-    padding-top: 100px;
-    width: 100%;
-    text-align: center;
 }
