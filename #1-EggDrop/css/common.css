@@ -11,7 +11,11 @@ body {
     font-family: 'Jost', sans-serif;
     font-size: 16px;
 }
-main{height: 100%;}
+
+main {
+    height: 100%;
+    position: relative;
+}
 
 section {
     padding-top: 100px;
@@ -43,9 +47,12 @@ h2 {
     font-size: 3.5em;
     font-weight: 600;
 }
-h3{
-    font-size: 1.3em;font-weight: 600;
+
+h3 {
+    font-size: 3em;
+    font-weight: 600;
 }
+
 strong {
     font-size: 1em;
     font-weight: 900;
@@ -55,7 +62,7 @@ p {
     font-weight: (--font-nanum);
     font-size: 1.2em;
     font-weight: 600;
-    white-space:wrap;
+    white-space: wrap;
 }
 
 /* 빨간색 밑줄 */
@@ -130,4 +137,3 @@ a.btn:hover {
         transform: rotate(360deg)
     }
 }
-
