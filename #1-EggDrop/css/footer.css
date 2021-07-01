@@ -1,0 +1,127 @@
+footer {
+    width: 100%;
+    background-color: #000;
+}
+
+footer .inner {
+    padding: 3em;
+    color: #fff;
+}
+
+footer .footer__top {
+    line-height: 2;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+footer .footer__top .footer__logo {
+    font-size: 2em;
+    font-weight: 800;
+}
+
+footer .footer__top .footer__logo a {
+    color: #fff;
+}
+
+footer .footer__top .sns {
+    display: flex;
+}
+
+footer .footer__top .sns li {}
+
+footer .footer__top .sns li a {
+    color: #fff;
+}
+
+
+footer .footer__bottom {
+    display: flex;
+    justify-content: space-between
+}
+
+footer .footer__bottom .nav {}
+
+footer .footer__bottom .nav li {
+    font-size: 2em;
+    line-height: 1.4;
+}
+
+footer .footer__bottom .nav li a {
+    position: relative;
+    color: #fff;
+    z-index: 5;
+}
+
+footer .footer__bottom .nav li:hover a {
+    color: #000
+}
+
+footer .footer__bottom .nav li:hover a::before {
+    content: "";
+    width: 100%;
+    height: 80%;
+    background-color: rgba(255,255, 255,0.5);
+    position: absolute;
+    top: 10%;
+    left: 0;
+    animation: line 0.5s;
+    z-index: -1;
+}
+
+@keyframes line {
+    0% {
+        width: 0
+    }
+
+    100% {
+        width: 100%
+    }
+
+
+}
+
+footer .footer__bottom .info {}
+
+footer .footer__bottom .info .btn--group {
+    display: flex;
+}
+
+footer .footer__bottom .info .btn--group li {
+    padding: 10px 20px 10px 0;
+    box-sizing: border-box;
+}
+
+footer .footer__bottom .info .btn--group li a {
+
+    color: #fff;
+    position: relative;
+    font-size: 1.1em;
+}
+
+footer .footer__bottom .info .btn--group li:not(:last-child) a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 2px;
+    height: 100%;
+    background-color: #fff;
+}
+
+
+footer .footer__bottom .info .copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end
+}
+
+footer .footer__bottom .info .copyright address {}
+
+footer .footer__bottom .info .copyright p {
+    padding-top: 1em;
+}
+
+footer .footer__bottom .info .copyright .address p {}
+
+footer .footer__bottom .info .copyright .address p {}
