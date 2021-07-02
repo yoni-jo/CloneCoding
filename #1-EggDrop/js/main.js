@@ -68,7 +68,7 @@ spyEls.forEach(function (spyEl){
     new ScrollMagic
         .Scene({
             triggerElement: spyEl, //보여짐 여부를 감시할 요소를 지정 
-            triggerHook: .5 // 위 triggerElement가 0.8위치에 걸리면 실행되게하는 옵션
+            triggerHook: 1 // 위 triggerElement가 0.8위치에 걸리면 실행되게하는 옵션
         })
         .setClassToggle(spyEl,'show')
         .addTo(new ScrollMagic.Controller());
