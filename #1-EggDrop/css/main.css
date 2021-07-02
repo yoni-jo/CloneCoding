@@ -112,14 +112,14 @@
     transition: .3s;
     height: 100%;
     overflow: hidden;
-    border: 2px solid #ee8484;
+    border: 2px solid #f8b601;
     transition: top .3s;
 }
 
 
 .menu__list .swiper-container a:hover .list {
     top: -100px;
-    background-color: #fceb06;
+    background-color: #ffd0c4;
     background-image: linear-gradient(90deg, transparent 95%, rgb(255, 255, 255) 95%),
         linear-gradient(transparent 95%, rgb(255, 255, 255) 95%);
     background-size: 50px 50px;

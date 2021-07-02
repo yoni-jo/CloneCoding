@@ -96,7 +96,8 @@ a.btn {
     height: 66px;
     box-sizing: border-box;
     padding: 3px;
-    color: #000;
+    color: #fff;
+    background-color: #db3f3f;
     border: 2px solid;
     border-radius: 50px;
     font-size: 1.3em;
@@ -104,13 +105,21 @@ a.btn {
     display: inline-flex;
     justify-content: space-around;
     align-items: center;
-    transition: color .3s;
+    transition: .3s;
+    
+    box-sizing: border-box;;
 }
 
-a.btn:hover {
-    background-color: red;
-    color: #fff;
-    border: 2px solid red;
+a.btn .material-icons {
+    transition: .3s;
+}
+a.btn:hover{
+    padding-left: 20px;
+    background-color: #fdfafa;
+    color:#db3f3f;
+}
+a.btn:hover .material-icons {
+    transform: translateX(20px)
 }
 
 .material-icons {
@@ -145,24 +154,28 @@ a.btn:hover {
 .back-to-position.to-up {
     transform: translateY(150px);
 }
-.back-to-position.to-right{
+
+.back-to-position.to-right {
     transform: translateX(-250px);
 }
-.back-to-position.to-left{
+
+.back-to-position.to-left {
     transform: translateX(250px);
 }
+
 .show .back-to-position {
-   opacity: 1;
+    opacity: 1;
     transform: translateY(0);
 }
-.show .back-to-position.delay-0{
+
+.show .back-to-position.delay-0 {
     transition-delay: 0s;
 }
-.show .back-to-position.delay-1{
+
+.show .back-to-position.delay-1 {
     transition-delay: 0.4s;
 }
-.show .back-to-position.delay-2{
+
+.show .back-to-position.delay-2 {
     transition-delay: 0.6s;
 }
-
- 
