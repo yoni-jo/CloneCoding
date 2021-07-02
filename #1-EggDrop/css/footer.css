@@ -1,6 +1,7 @@
 footer {
     width: 100%;
     background-color: #000;
+   
 }
 
 footer .inner {
@@ -28,8 +29,6 @@ footer .footer__top .sns {
     display: flex;
 }
 
-footer .footer__top .sns li {}
-
 footer .footer__top .sns li a {
     color: #fff;
 }
@@ -39,8 +38,6 @@ footer .footer__bottom {
     display: flex;
     justify-content: space-between
 }
-
-footer .footer__bottom .nav {}
 
 footer .footer__bottom .nav li {
     font-size: 2em;
@@ -81,8 +78,6 @@ footer .footer__bottom .nav li:hover a::before {
 
 }
 
-footer .footer__bottom .info {}
-
 footer .footer__bottom .info .btn--group {
     display: flex;
 }
@@ -115,13 +110,6 @@ footer .footer__bottom .info .copyright {
     flex-direction: column;
     justify-content: flex-end
 }
-
-footer .footer__bottom .info .copyright address {}
-
 footer .footer__bottom .info .copyright p {
     padding-top: 1em;
 }
-
-footer .footer__bottom .info .copyright .address p {}
-
-footer .footer__bottom .info .copyright .address p {}

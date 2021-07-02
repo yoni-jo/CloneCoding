@@ -29,6 +29,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"
     integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- ScrollMagic -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+    integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script defer src="./js/main.js"></script>
   <title>EggDrop</title>
 </head>
@@ -122,10 +126,10 @@
     </section>
 
     <!-- MENU -->
-    <section class="menu">
+    <section class="menu scroll-spy">
 
-      <h2>MENU</h2>
-      <ul class="menu__pageNav">
+      <h2 class="back-to-position to-up delay-0">MENU</h2>
+      <ul class="menu__pageNav back-to-position to-up delay-1">
         <li><a href="javascript:void(0)" class="underline">EGG DROP'S CHOICE</a></li>
         <li><a href="javascript:void(0)" class="underline">MEMINGUE BURGER</a></li>
         <li><a href="javascript:void(0)" class="underline">SANDWICH</a></li>
@@ -188,10 +192,10 @@
 
 
     <!-- NEW EGGDROP -->
-    <section class="newEggDrop">
-      <h2>NEW EGGDROP</h2>
+    <section class="newEggDrop scroll-spy">
+      <h2 class="back-to-position to-up delay-0">NEW EGGDROP</h2>
       <div class="container">
-        <div class="con__left">
+        <div class="con__left back-to-position to-up delay-1">
           <img src="./img/new/p_new_1.png" alt="CREAM CHEESE MERINGUE BUGGER" class="title" />
           <p><strong>크림치즈 머랭버거</strong></p>
           <p>달걀 흰자와 크림치즈가 만나 폭신폭신한 식감의 부드러운 에그 패티의 머랭 버거를 만나보세요</p>
@@ -199,17 +203,17 @@
             <a href="javascript:void(0)" class="btn">자세히 보기<div class="material-icons"> arrow_forward</div></a>
           </div>
         </div>
-        <div class="con__right">
+        <div class="con__right back-to-position to-up delay-2">
           <img src="./img/new/img_new_1.png" alt="크림치즈 머랭버거" />
         </div>
       </div>
-      <img src="./img/new/img_main_new_1.png" alt="" class="rolling"></div>
+      <img src="./img/new/img_main_new_1.png" alt="" class="rolling back-to-position to-left delay-2"></div>
     </section>
 
 
     <!-- STORE -->
-    <section class="store">
-      <h2>STORE</h2>
+    <section class="store scroll-spy">
+      <h2 class="back-to-position to-up delay-0">STORE</h2>
       <p>가장 가까운 EGGDROP 매장을 검색해보세요!</p>
 
       <div class="container">
@@ -225,13 +229,13 @@
 
         <p class="store--target">현재 위치 재설정</p>
         <ul class=store__etc>
-          <li class="store--branch">
+          <li class="store--branch  back-to-position to-up delay-1">
             <p><strong>강남본점</strong></p>
             <p>서울특별시 서초구 서초동 1321-9풍림아이원매직 제1층 102호
               번호 02-598-8833
               07:00-22:00</p>
           </li>
-          <li class="app">
+          <li class="app back-to-position to-up delay-2">
             <p>APP으로 간편하게 주문해보세요</p>
             <ul class="app__list">
               <li><a href="javascript:void(0)"><img src="./img/delivery/btn_baemin_2.png" alt="배달의민족"></a></li>
@@ -243,13 +247,13 @@
     </section>
 
     <!-- EGG MAKES BETTER -->
-    <section class="eggMakesBetter">
-      <img src="./img/makebetter/h_eat.png" alt="EGG MAKES BETTER" class="title">
+    <section class="eggMakesBetter scroll-spy">
+      <img src="./img/makebetter/h_eat.png" alt="EGG MAKES BETTER" class="title back-to-position to-up delay-0">
       <div class="eggMakesBetter__wrap">
-        <figure>
+        <figure class="back-to-position to-right delay-1">
           <img src="./img/makebetter/img_better.jpg"" alt=""/>
       </figure>
-      <div class=" eggMakesBetter__content">
+      <div class=" eggMakesBetter__content back-to-position to-left delay-2">
           <p><strong>일상의 수준을 높이다.</strong></p>
           <p>현대인에게 필요한 비타민, 철분, 아미노산 등의 풍부한 영양소가 함유된 프리미엄 무항생제 계란만 엄격하게
             사용한 맛있는 스크럼블 에그로 건강한 한끼를 요리합니다.
@@ -264,10 +268,10 @@
 
 
     <!-- NOTICE -->
-    <section class="notice">
-      <div class="inner">
-        <div class="notice__title">
-          <h3>NOTICE</h3>
+    <section class="notice scroll-spy">
+      <div class="inner back-to-position to-left delay-0">
+        <div class="notice__title ">
+          <h3 class="back-to-position to-up delay-1">NOTICE</h3>
           <p>EGGDROP의 새로운 소식을 확인해보세요</p>
           <a href="javascript:void(0)" class="btn">자세히 보기<div class="material-icons">arrow_forward</div></a>
         </div>
@@ -283,34 +287,42 @@
 
 
     <!-- FOLLOW US -->
-    <section class="follow-us">
-      <h2>FOLLOW US</h2>
-      <p><strong>@EGGDROP.OFFICIAL</strong></p>
-      <div class="container">
-        <ul class="item">
-          <li class="item__list"><a href="javascript:void(0)"><img src="./img/followus/1636077107.png" alt=""></a></li>
-          <li class="item__list"><a href="javascript:void(0)"><img src="./img/followus/1636077165.png" alt=""></a></li>
-          <li class="item__list"><a href="javascript:void(0)"><img src="./img/followus/1636077210.png" alt=""></a></li>
-          <li class="item__list"><a href="javascript:void(0)"><img src="./img/followus/1636077255.png" alt=""></a></li>
-          <li class="item__list"><a href="javascript:void(0)"><img src="./img/followus/1636077297.png" alt=""></a></li>
-          <li class="item__list"><a href="javascript:void(0)"><img src="./img/followus/1636077331.png" alt=""></a></li>
-          <li class="item__list"><a href="javascript:void(0)"><img src="./img/followus/1636077379.png" alt=""></a></li>
-          <li class="item__list"><a href="javascript:void(0)"><img src="./img/followus/1636077427.png  " alt=""></a>
-          </li>
-          <li class="item__list"><a href="javascript:void(0)"><img src="./img/followus/1636077460.png" alt=""></a></li>
-          <li class="item__list"><a href="javascript:void(0)"><img src="./img/followus/1636077578.png" alt=""></a></li>
-        </ul>
-      </div>
+    <section class="follow-us scroll-spy">
+      <h2 class=" back-to-position to-up delay-0">FOLLOW US</h2>
+      <p class="back-to-position to-up delay-1"><strong>@EGGDROP.OFFICIAL</strong></pclass>
+        <div class="container back-to-position to-up delay-2">
+          <ul class="item">
+            <li class="item__list"><a href="javascript:void(0)"><img src="./img/followus/1636077107.png" alt=""></a>
+            </li>
+            <li class="item__list"><a href="javascript:void(0)"><img src="./img/followus/1636077165.png" alt=""></a>
+            </li>
+            <li class="item__list"><a href="javascript:void(0)"><img src="./img/followus/1636077210.png" alt=""></a>
+            </li>
+            <li class="item__list"><a href="javascript:void(0)"><img src="./img/followus/1636077255.png" alt=""></a>
+            </li>
+            <li class="item__list"><a href="javascript:void(0)"><img src="./img/followus/1636077297.png" alt=""></a>
+            </li>
+            <li class="item__list"><a href="javascript:void(0)"><img src="./img/followus/1636077331.png" alt=""></a>
+            </li>
+            <li class="item__list"><a href="javascript:void(0)"><img src="./img/followus/1636077379.png" alt=""></a>
+            </li>
+            <li class="item__list"><a href="javascript:void(0)"><img src="./img/followus/1636077427.png  " alt=""></a>
+            </li>
+            <li class="item__list"><a href="javascript:void(0)"><img src="./img/followus/1636077460.png" alt=""></a>
+            </li>
+            <li class="item__list"><a href="javascript:void(0)"><img src="./img/followus/1636077578.png" alt=""></a>
+            </li>
+          </ul>
+        </div>
     </section>
-
-
     <!-- FIX-BTNS -->
     <div class="fix-btns">
       <a href="javascript:void(0)" class="btn--delevery rolling">delivery</a>
       <a href="javascript:void(0)" class="btn--top">
         <div class="material-icons">
-        expand_less
-        </div>Top</a>
+          expand_less
+        </div>Top
+      </a>
     </div>
   </main>
 
@@ -353,7 +365,7 @@
     </div>
   </footer>
 
-     
+
 </body>
 
 </html>

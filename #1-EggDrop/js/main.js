@@ -61,3 +61,38 @@ const menu=new Swiper('.menu .swiper-container', {
     loop: true,
     centeredSlides:true
 });
+
+// 스크롤 할때마다 각 세션 이미지가 나타나는 효과
+const spyEls = document.querySelectorAll('section.scroll-spy')
+spyEls.forEach(function (spyEl){
+    new ScrollMagic
+        .Scene({
+            triggerElement: spyEl, //보여짐 여부를 감시할 요소를 지정 
+            triggerHook: .5 // 위 triggerElement가 0.8위치에 걸리면 실행되게하는 옵션
+        })
+        .setClassToggle(spyEl,'show')
+        .addTo(new ScrollMagic.Controller());
+    })
+
+
+//scrollTop top button
+
+const scroll_On= document.querySelector(".slideOn")
+const menu_Offset = document.querySelector(".menu").offsetTop
+const Top=document.querySelector('.btn--top')
+
+
+scroll_On.addEventListener("click",slideDown)
+Top.addEventListener("click",slideUp)
+function slideDown(){
+     window.scrollTo({
+        top:menu_Offset,
+        behavior:'smooth'
+    })
+}
+function slideUp(){
+    window.scrollTo({
+        top:0,
+        behavior:'smooth'
+    })
+}

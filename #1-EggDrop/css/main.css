@@ -48,6 +48,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 .slide-banner .slideOn:hover {
@@ -75,8 +76,6 @@
 
 
 /* MENU */
-.menu {}
-
 .menu h2 {
     margin-bottom: 100px;
 }
@@ -171,7 +170,6 @@
     display: flex;
 
 }
-
 .newEggDrop .con__left {
     max-width: 50%;
     height: 500px;
@@ -205,8 +203,6 @@
     justify-content: center;
     align-items: center;
 }
-
-.store h2 {}
 
 .store>p {
     line-height: 2;
@@ -462,16 +458,12 @@
 /* fix__btns */
 
 .fix-btns {
-    z-index: 10;
     position: fixed;
-    bottom: 100px;
-    right: 11em;
-    display: flex;
-    flex-direction: column;
+    bottom:0;
+    right:5em;
 }
 
 .fix-btns .btn--delevery {
-    display: block;
     width: 89px;
     height: 89px;
     background-image: url(../img/delivery/btn_delivery.png);
@@ -485,10 +477,10 @@
 }
 
 .fix-btns .btn--top {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    font-size:1.2em;
+    font-size: 1.2em;
 }
 
