@@ -1,6 +1,6 @@
 /* SLIDE BANNER */
 .slide-banner {
-    width: 100%;
+    max-width: 100%;
     height: 1000px;
     padding-top: 100px;
     position: relative;
@@ -13,14 +13,14 @@
 
 .slide-banner .swiper-wrapper .swiper-slide a figure {
     width: 100%;
+    height: 100%;
 }
 
-.slide-banner .swiper-wrapper .swiper-slide figure .banner-item {
-    width: 100%;
-    height: 1000px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto 100%;
+.slide-banner .swiper-wrapper .swiper-slide figure img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 40% center;
 }
 
 .slide-banner .swiper-pagination {
@@ -110,15 +110,20 @@
     top: 0;
     bottom: 0;
     transition: .3s;
-    background-color: yellow;
     height: 100%;
     overflow: hidden;
     transition: top .3s;
+
+    border: 2px solid #ee8484;
 }
 
 
 .menu__list .swiper-container a:hover .list {
     top: -100px;
+    background-color: #fceb06;
+    background-image: linear-gradient(90deg, transparent 95%, rgb(255, 255, 255) 95%),
+        linear-gradient(transparent 95%, rgb(255, 255, 255) 95%);
+    background-size: 50px 50px;
 }
 
 .menu__list .swiper-container a:hover .list .list__img {
@@ -170,6 +175,7 @@
     display: flex;
 
 }
+
 .newEggDrop .con__left {
     max-width: 50%;
     height: 500px;
@@ -430,7 +436,6 @@
 }
 
 .follow-us .item .item__list {
-    background-color: blue;
     width: calc(100%/5 - 10px);
     margin: 5px;
 }
@@ -459,8 +464,8 @@
 
 .fix-btns {
     position: fixed;
-    bottom:0;
-    right:5em;
+    bottom: 0;
+    right: 5em;
     z-index: 10;
 }
 
@@ -484,4 +489,3 @@
     text-align: center;
     font-size: 1.2em;
 }
-

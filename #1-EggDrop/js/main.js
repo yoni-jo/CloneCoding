@@ -54,7 +54,7 @@ new Swiper('.slide-banner .swiper-container', {
 const menu=new Swiper('.menu .swiper-container', {
     direction: 'horizontal',
     autoplay: {
-        delay:3000
+        delay:4000
     },
     slidesPerView:4.5,
     spaceBetween:10,
