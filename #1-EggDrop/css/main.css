@@ -461,6 +461,7 @@
     position: fixed;
     bottom:0;
     right:5em;
+    z-index: 10;
 }
 
 .fix-btns .btn--delevery {
