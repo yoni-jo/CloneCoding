@@ -112,9 +112,8 @@
     transition: .3s;
     height: 100%;
     overflow: hidden;
-    transition: top .3s;
-
     border: 2px solid #ee8484;
+    transition: top .3s;
 }
 
 
