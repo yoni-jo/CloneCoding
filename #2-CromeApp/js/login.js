@@ -8,13 +8,17 @@ const welcome = document.querySelector('.welcome')
 function submit(event) {
     event.preventDefault();
     const username = text_input.value
-    welcome.classList.remove('hide')
-    LoginForm.classList.add('hide')
-    welcome.innerText = `Welcome !${username}~!`
     localStorage.setItem('username', username)
+    LoginForm.classList.add('hide')
+    userName(username)
 }
 
+//3.중복되는 동작 함수로 만들기 
 
+function userName(username){
+    welcome.innerText = `Welcome !${username}~!`
+    welcome.classList.remove('hide')
+}
 
 //2.이름이 등록되어있는지 유무 확인하기 
 
@@ -23,6 +27,5 @@ if (storage_name === null) {
     LoginForm.classList.remove('hide')
     login_btn.addEventListener('click', submit)
 }else{
-    welcome.innerText = `Welcome !${storage_name}~!`
-    welcome.classList.remove('hide')
+    userName(storage_name)
 }
