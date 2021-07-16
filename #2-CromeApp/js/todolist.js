@@ -1,16 +1,17 @@
 const toDoForm = document.querySelector('.todo-form')
+const todoList = toDoForm.querySelector('.todo-list')
 const toDoInput = toDoForm.querySelector('input')
-const todoList = document.querySelector('.todo-list')
+
+const toDos = []
+// 저장
+function saveTodo(newTodo){
+    localStorage.setItem('toDos',newTodo)
+}
 // 삭제
 function deleteTodo(event) {
-    event.preventDefault()
     const li = event.target.parentElement
     li.remove()
-
-
-
 }
-
 
 // todolist에 추가
 function createTodo(newTodo) {
@@ -27,10 +28,11 @@ function createTodo(newTodo) {
 
 // input버튼 눌렀을때 
 function handleToDoSubmit(event) {
-    const newTodo = toDoInput.value
     event.preventDefault();
+    const newTodo = toDoInput.value
     toDoInput.value = ""
     createTodo(newTodo)
+    saveTodo(newTodo)
 }
 
-toDoForm.addEventListener("submit", handleToDoSubmit)
+toDoForm.addEventListener('submit', handleToDoSubmit)
