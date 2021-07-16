@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,23 +11,35 @@
     <script defer src="./js/clock.js"></script>
     <script defer src="./js/quotes.js"></script>
     <script defer src="./js/bg.js"></script>
+    <script defer src="./js/todolist.js"></script>
     <title>Hello</title>
 </head>
+
 <body>
     <!-- LOGIN -->
     <form class="login-form hide">
-        <input required type="text" maxlength="15" placeholder="What's your name?"/>
-        <input type="submit" value="login" class="login-btn"/>
+        <input required type="text" maxlength="15" placeholder="What's your name?" />
+        <input type="submit" value="login" class="login-btn" />
     </form>
     <h1 class='welcome hide'></h1>
 
     <!-- CLOCK -->
     <h2 class="clock"></h2>
 
+    <!-- ToDOLIST -->
+    <form class="todo-form">
+        <input type="text" placeholder />
+        <ul class="todo-list">
+
+        </ul>
+    </form>
     <!-- QUOTES -->
     <div class="quotes">
         <span class="quotes__quote"></span>
         <span class="quotes__author"></span>
     </div>
+
+
 </body>
+
 </html>
