@@ -7,13 +7,13 @@
 <li>사용언어 : #HTML #CSS #JAVASCRIPT</li>
 
 </ul>
-
+Cancel changes
 <h3><#1-에그드랍></h3>
 <ul>
   <li> http://alterego.dothome.co.kr/EGGDROP/</li>
-<li>사용언어 : #HTML #CSS #JAVASCRIPT</li>
+<li><strong>사용언어</strong>: #HTML #CSS #JAVASCRIPT</li>
   <li>
-    사용라이브러리 : #lodash #Gsap # swiper # scrollMagic
+    <strong>사용라이브러리 </strong>: #lodash #Gsap # swiper # scrollMagic
   </li>
 
 </ul>
