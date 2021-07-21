@@ -8,7 +8,7 @@
 
 </ul>
 
-<h3><에그드랍></h3>
+<h3><#1-에그드랍></h3>
 <ul>
   <li> http://alterego.dothome.co.kr/EGGDROP/</li>
 <li>사용언어 : #HTML #CSS #JAVASCRIPT</li>
